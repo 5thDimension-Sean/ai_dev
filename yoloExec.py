@@ -13,4 +13,4 @@ model.export(format="onnx", dynamic=True)
 
 model = YOLO("yolo11n.pt")
 
-results = model("images/train/trafficLight.jpg", save=True, show = True)
+results = model("images/train/shortDrive.mp4", save=True, show = True, device=0)
