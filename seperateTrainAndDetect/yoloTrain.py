@@ -1,3 +1,9 @@
+import torch
+from ultralytics import YOLO
+import boto3
+print(boto3.__version__)
+
+
 '''
 model = YOLO("yolo11s.pt")
 model.train(data="coco128.yaml",epochs=3,imgsz=1280,name="yolo11n-results",device=0)
