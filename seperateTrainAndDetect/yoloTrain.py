@@ -1,4 +1,6 @@
 import torch
+print(torch.cuda.is_available()) # Check for GPU availability
+
 from ultralytics import YOLO
 import boto3
 print(boto3.__version__)
